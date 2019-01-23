@@ -102,4 +102,14 @@
 		animateOut: 'fadeOut'
   });
   
+  $('body').on('touchmove', function (e) {
+    if ($('.scroll-disable').has($(e.target)).length) e.preventDefault();
+  });
+  $('body').on('shown.bs.modal', function () {
+    $(this).addClass('scroll-disable');
+  });
+  $('body').on('hidden.bs.modal', function () {
+    $(this).removeClass('scroll-disable');
+  });
+
 })(jQuery); // End of use strict

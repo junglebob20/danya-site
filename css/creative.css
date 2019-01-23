@@ -732,3 +732,6 @@ color:#FFF;
   overflow-y: auto;
 }
 }
+.scroll-disable{
+  overflow: hidden!important;
+}
