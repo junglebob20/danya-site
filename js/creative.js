@@ -107,9 +107,11 @@
   });
   $('body').on('shown.bs.modal', function () {
     $(this).addClass('scroll-disable');
+    $('html').addClass('scroll-disable');
   });
   $('body').on('hidden.bs.modal', function () {
     $(this).removeClass('scroll-disable');
+    $('html').removeClass('scroll-disable');
   });
 
 })(jQuery); // End of use strict
