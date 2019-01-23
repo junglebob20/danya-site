@@ -726,3 +726,9 @@ color:#FFF;
 .modal-backdrop.show{
   opacity: .8!important;
 }
+@media only screen and (max-width: 576px) {
+.modal-body-mobile{
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+}
