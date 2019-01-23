@@ -735,3 +735,7 @@ color:#FFF;
 .scroll-disable{
   overflow: hidden!important;
 }
+
+.modal-open .modal{
+  overflow: hidden!important;
+}
